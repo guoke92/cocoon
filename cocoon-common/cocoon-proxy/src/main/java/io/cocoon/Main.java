@@ -1,13 +1,24 @@
 package io.cocoon;
 
 import lombok.Data;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+
+        ArrayList<String> list = new ArrayList<>();
+        list.add("123");
+        list.add("2324");
+
+        String join = String.join(",", list);
+        System.out.println("join = " + join);
+        String join1 = StringUtils.join(list, ",");
+        System.out.println("join1 = " + join1);
 
         User user1 = new User();
         JdkProxy jdkProxy = new JdkProxy(user1);
