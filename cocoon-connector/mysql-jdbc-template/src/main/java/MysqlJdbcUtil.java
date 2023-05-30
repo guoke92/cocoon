@@ -4,7 +4,6 @@ import com.mysql.cj.jdbc.Driver;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory;
 
 import java.util.List;
 
@@ -23,7 +22,6 @@ public class MysqlJdbcUtil {
 
     public static void main(String[] args) throws JsonProcessingException {
 
-        EmbeddedDatabaseFactory embeddedDatabaseFactory = new EmbeddedDatabaseFactory();
         SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
         dataSource.setDriverClass(Driver.class);
         dataSource.setUsername(username);

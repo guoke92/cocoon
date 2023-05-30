@@ -9,6 +9,8 @@
     <file url="file://$PROJECT_DIR$/cocoon-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-connector/mongodb-jdbc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-connector/mongodb-jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-connector/mongodb-spring-boot-data/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-connector/mongodb-spring-boot-data/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-connector/mongodb-spring-data/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-connector/mongodb-spring-data/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-connector/mysql-jdbc-mybatis-plus/src/main/java" charset="UTF-8" />

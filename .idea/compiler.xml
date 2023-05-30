@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mongodb-spring-data" />
+        <module name="mongodb-spring-boot-data" />
         <module name="mongodb-jdbc" />
-        <module name="spring-cache" />
         <module name="cocoon-flow-core" />
         <module name="mysql-jdbc-mybatis" />
         <module name="cocoon-proxy" />

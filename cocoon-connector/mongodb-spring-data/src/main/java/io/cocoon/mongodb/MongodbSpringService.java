@@ -7,7 +7,6 @@ import com.mongodb.client.MongoClients;
 import io.cocoon.mongodb.bean.Person;
 import io.cocoon.mongodb.service.PersonRepository;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory;
 import org.springframework.data.mongodb.repository.support.MongoRepositoryFactory;
 
 import java.util.Arrays;
