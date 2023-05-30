@@ -17,6 +17,7 @@
         <module>mysql-jdbc-mybatis</module>
         <module>mysql-jdbc-mybatis-plus</module>
         <module>mongodb-jdbc</module>
+        <module>mongodb-spring-data</module>
     </modules>
 
     <properties>

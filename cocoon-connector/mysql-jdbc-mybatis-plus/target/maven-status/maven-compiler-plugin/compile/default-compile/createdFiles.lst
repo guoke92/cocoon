@@ -1,0 +1,3 @@
+io\cocoon\db\mapper\CcTestMapper.class
+io\cocoon\service\SqlSessionService.class
+io\cocoon\model\CcTestDO.class

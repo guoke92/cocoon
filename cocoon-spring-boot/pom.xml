@@ -12,7 +12,7 @@
     <artifactId>cocoon-spring-boot</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-cache</module>
+<!--        <module>spring-cache</module>-->
     </modules>
 
     <properties>

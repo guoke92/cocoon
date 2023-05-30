@@ -5,6 +5,12 @@
     <file url="file://$PROJECT_DIR$/cocoon-common/cocoon-exception/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-common/cocoon-proxy/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-common/cocoon-proxy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-connector/mongodb-jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-connector/mongodb-jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-connector/mongodb-spring-data/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-connector/mongodb-spring-data/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-connector/mysql-jdbc-mybatis-plus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-connector/mysql-jdbc-mybatis-plus/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-connector/mysql-jdbc-mybatis/src/main/java" charset="UTF-8" />
@@ -13,8 +19,12 @@
     <file url="file://$PROJECT_DIR$/cocoon-connector/mysql-jdbc-template/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-connector/mysql-jdbc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-connector/mysql-jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-connector/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-connector/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-flow/cocoon-flow-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-flow/cocoon-flow-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-flow/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-flow/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-snowflake/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-snowflake/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-spi/src/main/java" charset="UTF-8" />
@@ -23,5 +33,9 @@
     <file url="file://$PROJECT_DIR$/cocoon-spring-boot/spring-cache/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-spring-boot/spring-redisson/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cocoon-spring-boot/spring-redisson/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-spring-boot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cocoon-spring-boot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>
