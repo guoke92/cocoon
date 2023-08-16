@@ -1,5 +1,7 @@
 package io.cocoon.flow.core.service.api;
 
+import io.cocoon.flow.core.service.enums.LifecycleStageEnum;
+
 /**
  * @program: cocoon
  * @description:
@@ -7,16 +9,24 @@ package io.cocoon.flow.core.service.api;
  **/
 public interface Lifecycle {
 
-    void init();
-
+    /**
+     * 启动
+     */
     void start();
 
+    /**
+     * 停止
+     */
     void stop();
 
-    void retry();
+    /**
+     * 结束
+     */
+    void finish();
 
-    void destroy();
-
-    String getStage();
-
+    /**
+     * 获取当前生命周期阶段
+     * @return 当前生命周期阶段
+     */
+    LifecycleStageEnum getStage();
 }

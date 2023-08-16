@@ -15,6 +15,7 @@
         <module>cocoon-spring-boot</module>
         <module>cocoon-spring-boot/spring-redisson</module>
         <module>cocoon-flow</module>
+        <module>cocoon-train</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -49,6 +50,11 @@
                 <plugin>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>3.0.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.evosuite.plugins</groupId>
+                    <artifactId>evosuite-maven-plugin</artifactId>
+                    <version>1.0.6</version>
                 </plugin>
             </plugins>
         </pluginManagement>

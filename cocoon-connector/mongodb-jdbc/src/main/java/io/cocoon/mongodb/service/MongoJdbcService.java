@@ -99,9 +99,7 @@ public class MongoJdbcService {
         for (Document document : crud.find()) {
             logger.error("after delete, find crud, {}" , document.toJson());
         }
-
     }
-
 
 
 }

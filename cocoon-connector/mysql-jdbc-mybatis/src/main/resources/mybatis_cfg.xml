@@ -22,6 +22,6 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="mappers/CcTestMapper.xml"/>
+        <package name="io.cocoon.db.mapper"/>
     </mappers>
 </configuration>

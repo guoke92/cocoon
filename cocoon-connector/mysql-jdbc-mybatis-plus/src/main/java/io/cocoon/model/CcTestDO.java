@@ -2,7 +2,11 @@ package io.cocoon.model;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
+
+import java.time.LocalDateTime;
 
 /**
  * @program: cocoon
@@ -11,6 +15,7 @@ import lombok.Data;
  * @create: 2022-10-08 10:48
  **/
 @Data
+@TableName("cc_test")
 public class CcTestDO {
 
     @TableId
@@ -21,15 +26,21 @@ public class CcTestDO {
     private String name;
 
     @TableField("age")
-    private int age;
+    private Integer age;
 
     @TableField("sex")
-    private boolean sex;
+    private Boolean sex;
+
+    @TableField("create_time")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime createTime;
 
     @TableField("update_time")
-    private String createTime;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime updateTime;
 
-    @TableField("update_time")
-    private String updateTime;
+    public String getName() {
+        return name + "====";
+    }
 
 }

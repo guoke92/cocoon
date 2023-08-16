@@ -15,7 +15,7 @@ import java.util.concurrent.ForkJoinPool;
 public class MysqlJdbcUtil {
 
     private static String driver = "com.mysql.cj.jdbc.Driver";
-    private static String url = "jdbc:mysql://localhost:3306/cocoon";
+    private static String url = "jdbc:mysql://dev-mysql.lls.com:3350/bigdata_risk_xxljob?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false";
     private static String username = "root";
     private static String password = "123456";
 

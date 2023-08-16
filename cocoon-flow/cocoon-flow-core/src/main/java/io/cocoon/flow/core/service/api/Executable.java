@@ -6,15 +6,8 @@ package io.cocoon.flow.core.service.api;
  * @author: fanjunwei
  **/
 public interface Executable {
-
-    void preProc();
-
-    void process();
-
-    void postProc();
-
-    void onFail();
-
-    void onSuccess();
-
+    /**
+     * 执行
+     */
+    void start();
 }

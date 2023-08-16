@@ -6,14 +6,18 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import io.cocoon.mongodb.bean.Person;
 import io.cocoon.mongodb.service.PersonRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.repository.support.MongoRepositoryFactory;
+import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
 
+@Service
 public class MongodbSpringService {
 
+    @Autowired
     public static void main(String[] args) throws JsonProcessingException {
 
         MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");

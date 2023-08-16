@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.util.concurrent.CompletableFuture.AsyncSupply</OriginalElement>
+  <nodes>
+    <node x="-129.0" y="-14.0">java.util.concurrent.Future</node>
+    <node x="200.0" y="64.0">java.lang.Runnable</node>
+    <node x="167.0" y="-14.0">java.lang.FunctionalInterface</node>
+    <node x="18.00000000000003" y="-14.0">java.io.Serializable</node>
+    <node x="-76.5" y="64.0">java.util.concurrent.ForkJoinTask</node>
+    <node x="336.0" y="64.0">java.util.concurrent.CompletableFuture.AsynchronousCompletionTask</node>
+    <node x="114.75" y="142.0">java.util.concurrent.CompletableFuture.AsyncSupply</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.concurrent.CompletableFuture.AsyncSupply" target="java.util.concurrent.ForkJoinTask" relationship="GENERALIZATION">
+      <point x="-42.5" y="-14.0" />
+      <point x="157.25" y="122.0" />
+      <point x="8.5" y="122.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="java.lang.Runnable" target="java.lang.FunctionalInterface" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="java.util.concurrent.CompletableFuture.AsyncSupply" target="java.lang.Runnable" relationship="REALIZATION">
+      <point x="42.5" y="-14.0" />
+      <point x="242.25" y="122.0" />
+      <point x="361.5" y="122.0" />
+      <point x="361.5" y="112.0" />
+      <point x="258.0" y="112.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="java.util.concurrent.ForkJoinTask" target="java.io.Serializable" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="8.5" y="39.0" />
+      <point x="82.50000000000003" y="39.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="java.util.concurrent.ForkJoinTask" target="java.util.concurrent.Future" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="8.5" y="39.0" />
+      <point x="-65.5" y="39.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="java.util.concurrent.CompletableFuture.AsyncSupply" target="java.util.concurrent.CompletableFuture.AsynchronousCompletionTask" relationship="REALIZATION">
+      <point x="42.5" y="-14.0" />
+      <point x="242.25" y="122.0" />
+      <point x="361.5" y="122.0" />
+      <point x="361.5" y="112.0" />
+      <point x="465.0" y="112.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.5" showDependencies="false" x="242.5" y="88.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
