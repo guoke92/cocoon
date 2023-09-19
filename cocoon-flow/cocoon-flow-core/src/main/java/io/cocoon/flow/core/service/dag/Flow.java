@@ -4,8 +4,8 @@ package io.cocoon.flow.core.service.dag;
  * @author 15420
  */
 public class Flow{
-    String name;
     String flowId;
+    String name;
     Task head;
 
     Flow(String name) {

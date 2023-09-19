@@ -1,38 +1,63 @@
 package io.cocoon.flow.core.service.api;
 
+import io.cocoon.flow.core.service.enums.LifecycleStageEnum;
+import lombok.Data;
+
+import java.util.Map;
+
 /**
  * @program: cocoon
  * @description:
  * @author: fanjunwei
  **/
-public interface Task extends Executable, Retryable, Lifecycle {
+@Data
+public abstract class Task implements Executable, Retryable, Lifecycle {
+
+    private LifecycleStageEnum stage = LifecycleStageEnum.INIT;
 
     @Override
-    default void start() {
-        preProc();
-        proc();
-        postProc();
+    public void start() {
+        try {
+            run();
+            onComplete();
+        } catch (Exception e) {
+            onError(e);
+        }
     }
 
     @Override
-    default void retry() {
+    public void retry() {
         start();
     }
 
+    /**
+     * 实际执行
+     */
+    abstract void run();
 
     /**
-     * 前置处理
+     * 异常
      */
-    void preProc();
+    abstract void onError(Exception e);
 
     /**
-     * 执行
+     * 完成
      */
-    void proc();
+    abstract void onComplete();
 
-    /**
-     * 后置处理
-     */
-    void postProc();
+    @Override
+    public void stop() {
+        stage = LifecycleStageEnum.STOP;
+    }
+
+    @Override
+    public void finish() {
+        stage = LifecycleStageEnum.FINISH;
+    }
+
+    @Override
+    public LifecycleStageEnum getStage() {
+        return stage;
+    }
 
 }

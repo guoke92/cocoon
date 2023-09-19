@@ -1,0 +1,38 @@
+@startmindmap
+caption 流程设计脑图
+title Flow脑图
+<style>
+mindmapDiagram {
+    node{
+        BackgroundColor: lightred
+    }
+    :depth(1) {
+        BackgroundColor: lightgreen
+    }
+    boxless {
+        FontColor: darkgreen
+    }
+
+}
+</style>
+
+* Flow
+'right side
+    * Task
+        *_ Task
+        *_ Group
+    * Group
+        *_ Task
+        *_ Group
+
+'left side
+'    * Task
+'    * Group
+
+header guoke
+center footer guoke
+legend right
+  By
+  guoke
+endlegend
+@endmindmap
