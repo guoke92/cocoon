@@ -1,0 +1,477 @@
+@startjson
+
+{
+	"folders": {
+		"DEV": {},
+		"QA": {},
+		"UAT": {},
+		"LOCAL": {},
+		"mongo": {}
+	},
+	"connections": {
+		"mysql8-1811ea8fe8d-3c9f0578ab4b67d1": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "DEV",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "DEV",
+			"configuration": {
+				"host": "dev-mysql.lls.com",
+				"port": "3350",
+				"url": "jdbc:mysql://dev-mysql.lls.com:3350/",
+				"home": "mysql_client",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false",
+				"valueManager.bigdata_remote_data.async_call_rsp:rsp": "json",
+				"valueManager.bigdata_remote_data.remote_async_data:content": "json",
+				"valueManager.bigdata_remote_data.task_detail:param_info": "json",
+				"valueManager.bigdata_remote_data.task_group:param": "json",
+				"valueManager.bigdata_risk_admin.org_right_manage:config": "json",
+				"valueManager.bigdata_risk_ic.analysis_report:ext_param": "json",
+				"valueManager.bigdata_risk_ic.analysis_report:input_param": "json",
+				"valueManager.bigdata_risk_ic.analysis_report_log:fail_reason": "json",
+				"valueManager.bigdata_risk_ic.push_diff_data_record:content": "json",
+				"valueManager.bigdata_risk_ic.strategy_config:index_config": "json",
+				"valueManager.dlm_rule.rule:dsl_data": "json",
+				"valueManager.dlm_rule.rule_flow:dsl_data": "json",
+				"valueManager.dlm_rule.rule_flow_log:`output`": "json"
+			}
+		},
+		"mysql8-1811ea91095-31cd3a98f118b2a1": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "fk-data-gataway",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "DEV",
+			"configuration": {
+				"host": "dev-mysql.lls.com",
+				"port": "3400",
+				"url": "jdbc:mysql://dev-mysql.lls.com:3400/",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"mysql8-1811ea91e5c-4910857736cd6e63": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "dlm_factory",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "QA",
+			"configuration": {
+				"host": "mysql01.qa.lls.com",
+				"port": "3930",
+				"database": "dlm_factory",
+				"url": "jdbc:mysql://mysql01.qa.lls.com:3930/dlm_factory",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"mysql8-1811ea92d12-3070f19b3ee60cd1": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "QA",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "QA",
+			"configuration": {
+				"host": "qa-mysql.lls.com",
+				"port": "3350",
+				"url": "jdbc:mysql://qa-mysql.lls.com:3350/",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false",
+				"valueManager.bigdata_fkdb.seller_invoice_async_export_log:request_json": "json",
+				"valueManager.bigdata_remote_data.remote_trans_log:rsp": "json",
+				"valueManager.bigdata_risk_financial.analysis_module_config:content": "json",
+				"valueManager.bigdata_risk_ic.analysis_report:input_param": "json",
+				"valueManager.bigdata_risk_ic.icbc_business_data_sync:`data`": "json",
+				"valueManager.bigdata_risk_ic.push_all_data_record:content": "json",
+				"valueManager.bigdata_risk_ic.push_diff_data_record:content": "json",
+				"valueManager.dlm_rule.executor_log:rsp_content": "json",
+				"valueManager.dlm_rule.rule:decision": "json",
+				"valueManager.dlm_rule.rule:dsl_data": "json",
+				"valueManager.dlm_rule.rule:else_decision": "json"
+			}
+		},
+		"mysql8-1811ea9363e-5d89f349b322d95f": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "UAT",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "UAT",
+			"configuration": {
+				"host": "uat-mysql.lls.com",
+				"port": "3350",
+				"url": "jdbc:mysql://uat-mysql.lls.com:3350/",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false",
+				"valueManager.bigdata_remote_data.remote_async_data:content": "json",
+				"valueManager.bigdata_remote_data.remote_trans_log:head": "json",
+				"valueManager.bigdata_remote_data.remote_trans_log:rsp": "json",
+				"valueManager.bigdata_remote_data.task_group:param": "json",
+				"valueManager.bigdata_risk_ic.analysis_report:input_param": "json",
+				"valueManager.bigdata_risk_ic.analysis_report_log:input_param": "json",
+				"valueManager.bigdata_risk_ic.ic_remote_parse_data:content": "json",
+				"valueManager.bigdata_risk_ic.push_diff_data_record:content": "json",
+				"valueManager.bigdata_risk_ic.remote_trans_log:req": "json",
+				"valueManager.bigdata_risk_ic.remote_trans_log:rsp": "json",
+				"valueManager.bigdata_risk_ic.strategy_config:index_config": "json"
+			}
+		},
+		"mysql8-1811ea93d68-757f6e437d6a3690": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "uat-mysql.lls.com",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "UAT",
+			"configuration": {
+				"host": "uat-mysql.lls.com",
+				"port": "3400",
+				"url": "jdbc:mysql://uat-mysql.lls.com:3400/",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"mysql8-1816b7fefec-fac7aac635cb5c": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "mysql01.dev.lls.com",
+			"save-password": true,
+			"read-only": false,
+			"folder": "DEV",
+			"configuration": {
+				"host": "mysql01.dev.lls.com",
+				"port": "4090",
+				"url": "jdbc:mysql://mysql01.dev.lls.com:4090/",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false",
+				"resultset.maxrows": "5000",
+				"valueManager.cmbc_invoice.report:input_param": "json",
+				"valueManager.cmbc_invoice.report_view_wrapper:content": "json",
+				"valueManager.cmbc_invoice.report_view_wrapper_log:fail_reason": "json"
+			}
+		},
+		"mysql8-181a32e5f40-668ccb57b8326233": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "mysql01.qa.lls.com",
+			"save-password": true,
+			"read-only": false,
+			"folder": "QA",
+			"configuration": {
+				"host": "mysql01.qa.lls.com",
+				"port": "4090",
+				"url": "jdbc:mysql://mysql01.qa.lls.com:4090/",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false",
+				"valueManager.cmbc_invoice.report_view_wrapper:content": "json",
+				"valueManager.cmbc_transflow.report_view_wrapper:content": "json"
+			}
+		},
+		"mysql8-182aab85249-fcd012e5c6050b3": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "localhost",
+			"save-password": true,
+			"read-only": false,
+			"folder": "LOCAL",
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-18344161799-272990b77ad937df": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "qa-mysql.lls.com",
+			"save-password": true,
+			"read-only": false,
+			"folder": "QA",
+			"configuration": {
+				"host": "qa-mysql.lls.com",
+				"port": "3400",
+				"url": "jdbc:mysql://qa-mysql.lls.com:3400/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"mysql8-1834532090d-41415d4400252c8c": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "dev-mysql.lls.com",
+			"save-password": true,
+			"read-only": false,
+			"folder": "DEV",
+			"configuration": {
+				"host": "dev-mysql.lls.com",
+				"port": "3330",
+				"url": "jdbc:mysql://dev-mysql.lls.com:3330/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"mysql8-186da6cb7cf-2e73ce922cdbcda4": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "172.16.84.70",
+			"save-password": true,
+			"read-only": false,
+			"folder": "LOCAL",
+			"configuration": {
+				"host": "172.16.84.70",
+				"port": "3306",
+				"url": "jdbc:mysql://172.16.84.70:3306/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-1874605ec7c-27af657f3f3c6f19": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "172.16.84.178",
+			"save-password": true,
+			"read-only": false,
+			"folder": "DEV",
+			"configuration": {
+				"host": "172.16.84.178",
+				"port": "23306",
+				"url": "jdbc:mysql://172.16.84.178:23306/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"mysql8-18798fea706-2cce452d405229d0": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "sme",
+			"save-password": true,
+			"read-only": false,
+			"folder": "DEV",
+			"configuration": {
+				"host": "dev-mysql.lls.com",
+				"port": "3390",
+				"url": "jdbc:mysql://dev-mysql.lls.com:3390/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"mysql8-1879ca6199a-42b5742cd9dc00ae": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "uat-mysql.lls.com 2",
+			"save-password": true,
+			"read-only": false,
+			"folder": "UAT",
+			"configuration": {
+				"host": "uat-mysql.lls.com",
+				"port": "3390",
+				"url": "jdbc:mysql://uat-mysql.lls.com:3390/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"mysql8-1879de81874-a511fc379708962": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "蜜蜂助手",
+			"save-password": true,
+			"read-only": false,
+			"folder": "DEV",
+			"configuration": {
+				"host": "172.16.90.216",
+				"port": "3306",
+				"url": "jdbc:mysql://172.16.90.216:3306/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"mysql8-188038a9df6-26df74710b79144d": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "product-data.lls.com",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "QA",
+			"configuration": {
+				"host": "product-data.lls.com",
+				"port": "23306",
+				"url": "jdbc:mysql://product-data.lls.com:23306/",
+				"home": "D:\\Tool\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-1882da8ad07-5258d97af11bd6e5": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "uat-mysql.lls.com 3",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "UAT",
+			"configuration": {
+				"host": "uat-mysql.lls.com",
+				"port": "3330",
+				"url": "jdbc:mysql://uat-mysql.lls.com:3330/",
+				"home": "D:\\Tool\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-1882daa5296-4524066c5c5e70eb": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "qa-mysql.lls.com 2",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "QA",
+			"configuration": {
+				"host": "qa-mysql.lls.com",
+				"port": "3330",
+				"url": "jdbc:mysql://qa-mysql.lls.com:3330/",
+				"home": "D:\\Tool\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-18832dffdd6-437e6e4add494969": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "172.16.87.19",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "172.16.87.19",
+				"port": "23306",
+				"url": "jdbc:mysql://172.16.87.19:23306/",
+				"home": "D:\\Tool\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-18a695c2dee-d1dc242ff115e66": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "多级",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "DEV",
+			"configuration": {
+				"host": "dev-mysql.lls.com",
+				"port": "3450",
+				"url": "jdbc:mysql://dev-mysql.lls.com:3450/",
+				"home": "D:\\Tool\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		},
+		"mysql8-18a695cf439-76bdf6f6ec86acad": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "多级",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "QA",
+			"configuration": {
+				"host": "qa-mysql.lls.com",
+				"port": "3450",
+				"url": "jdbc:mysql://qa-mysql.lls.com:3450/",
+				"home": "D:\\Tool\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
+
+@endjson

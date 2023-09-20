@@ -1,0 +1,21 @@
+@startuml
+skinparam monochrome reverse
+!theme sketchy-outline
+title Sth
+header SqlSessionService
+
+SqlSessionService->SqlSessionService: main
+SqlSessionService->SqlSessionFactoryBuilder: build
+SqlSessionFactoryBuilder -> SqlSessionFactoryBuilder: build
+SqlSessionFactoryBuilder -> XMLConfigBuilder: parse
+XMLConfigBuilder -> XMLConfigBuilder: parseConfiguration
+XMLConfigBuilder -> XMLConfigBuilder: mapperElement
+XMLConfigBuilder -> XMLMapperBuilder: parse
+XMLMapperBuilder -> XMLMapperBuilder: configurationElement
+XMLMapperBuilder -> XMLMapperBuilder: buildStatementFromContext
+XMLMapperBuilder -> XMLMapperBuilder: buildStatementFromContext
+XMLMapperBuilder -> XMLStatementBuilder: parseStatementNode
+XMLStatementBuilder -> MapperBuilderAssistant: addMappedStatement
+MapperBuilderAssistant -> Configuration: addMappedStatement
+
+@enduml
