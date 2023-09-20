@@ -26,6 +26,10 @@ public class Field implements Serializable {
      */
     String cnMame;
     /**
+     * 别名
+     */
+    String alias;
+    /**
      * 字段类型
      */
     String type;
@@ -34,7 +38,7 @@ public class Field implements Serializable {
      */
     String comment;
     /**
-     * 是否可为空
+     * 是否可为空 TODO 有条件必填
      */
     Boolean nullable;
     /**
@@ -51,5 +55,4 @@ public class Field implements Serializable {
     Integer order;
 
     // TODO 创建人、更新人、创建时间、更新时间 等
-
 }
